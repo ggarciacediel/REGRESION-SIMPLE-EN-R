@@ -4,7 +4,7 @@ library(readxl)
 library(ggplot2)
 
 
-# 3. Explorar datos
+#Explorar datos
 head(datos)        # primeras filas
 summary(datos)     # resumen estadísticdatos <- read_excel("G:/Mi unidad/portatil/tematicas/econometria/clases/LISTAS/CLASES II 2025/DATOS1.xlsx")
 o
@@ -55,4 +55,5 @@ ggplot(datos, aes(x = ESCOLARIDAD, y = SALARIO)) +
   geom_smooth(method = "lm", se = FALSE, color = "red") + # recta de regresión
   labs(title = "Regresión lineal simple: Salario vs Escolaridad",
        x = "Años de escolaridad",
+
        y = "Salario")
